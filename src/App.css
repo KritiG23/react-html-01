@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    padding: 0;
+    word-break: break-word;
+    margin: 0;
+}

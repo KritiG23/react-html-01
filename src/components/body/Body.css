@@ -1,0 +1,47 @@
+.body{
+    position: relative;
+    padding: 0 2em;
+}
+.search-container{
+    text-align: center;
+    padding: 2em 0;
+}
+.search-container h2{
+    font-size: 2em;
+}
+.filter{
+    position: relative;
+    padding: 1em;
+}
+.filter button{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 1em;
+    border: none;
+}
+.body-card{
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1em;
+    
+}
+.rest-card{
+    border: 1px solid #000;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    padding: 0.5em;
+}
+.rest-card img{
+width: 100%;
+}
+.rest-card{
+
+}
+.rest-child{
+   display: flex; 
+   justify-content: space-between;
+}

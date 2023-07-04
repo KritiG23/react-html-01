@@ -1,0 +1,13 @@
+.header{
+display: flex;
+justify-content: space-between;
+height: 60px;
+padding: 0 2em;
+border-bottom: 1px solid #eee;
+align-items: center;
+}
+.nav{
+    display: flex;
+    gap: 1em;
+    font-size: 1em;
+}
