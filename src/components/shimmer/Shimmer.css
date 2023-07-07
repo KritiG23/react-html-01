@@ -1,0 +1,12 @@
+.shim-card{
+    background-color: #f2f2f2;;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    padding: 0.5em;
+    height: 200px;
+}
+.container{
+display: flex;
+}
