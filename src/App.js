@@ -1,6 +1,6 @@
 
 //react element 
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import ReactDOM from "react-dom/client";
 import Header from './common/header/Header';
 import Body from './components/body/Body';
@@ -10,6 +10,8 @@ import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import ErrorPage from './components/error';
 import RestoMenu from './components/restroMenu/RestroMenu';
+//import Grocery from './components/Grocery';
+const Grocery = lazy(()=>import("./components/Grocery"))
 const App = ()=> {
   return (
     <div>
@@ -38,6 +40,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:id",
         element: <RestoMenu />,
+      },
+      {
+        path: "/grocery",
+        element:
+        <Suspense fallback={"fff"}>
+         <Grocery />
+         </Suspense>
+         ,
       }
     ],
     errorElement:<ErrorPage />

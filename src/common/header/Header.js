@@ -16,6 +16,7 @@ const Header =() => {
         <div><Link to="/">Home</Link></div>
         <div><Link to="/about">About</Link></div>
         <div><Link to="/contact">Contact </Link></div>
+        <div><Link to="/grocery">Grocery </Link></div>
         <div>Cart</div>
             <button onClick={btnHndle}> {btnChange}</button>
         </div>

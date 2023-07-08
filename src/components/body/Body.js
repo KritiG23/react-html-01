@@ -5,6 +5,7 @@ import {IMAGE_URL} from "../../utils/url"
 import Shimmer from '../shimmer/Shimmer'
 import { Link } from 'react-router-dom'
 import {RES_LIST } from "../../utils/url"
+import usseOnlineStatus from '../../utils/usseOnlineStatus'
 
 
 
@@ -24,7 +25,10 @@ useEffect(() => {
     fetchData();
   }, []); 
 //console.log("body rendering")
-console.log(udateSearch)
+// console.log(udateSearch)
+const onlineStatus = usseOnlineStatus();
+console.log(onlineStatus)
+if(onlineStatus === false) return <h2>you are offline</h2>
 
   return (
     <div className="body">
