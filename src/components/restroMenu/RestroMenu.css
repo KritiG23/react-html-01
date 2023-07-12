@@ -1,0 +1,6 @@
+.rev{
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid;
+gap: 0.8em;
+}

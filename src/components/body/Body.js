@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import {RES_LIST } from "../../utils/url"
 import usseOnlineStatus from '../../utils/usseOnlineStatus'
 import UserContaxt from '../../utils/UserContaxt'
+import { useSelector } from 'react-redux'
 
 
 
@@ -15,8 +16,9 @@ const Body = () => {
     const[udateSearch,setUpdateSearch] = useState([])
     const [searchText,setSearchText] = useState("")
     const {user,setUser}=useContext(UserContaxt)
-    console.log(user)
-    console.log(listRest)
+
+    // console.log(user)
+    // console.log(listRest)
 useEffect(() => {
     async function fetchData() {
         const data = await fetch(RES_LIST)
